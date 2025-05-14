@@ -1,6 +1,7 @@
 # Run On - A Simple Pygame Cat Runner
 
-"Run On" is a fun little side-scrolling endless runner game built using **Pygame**. You control a chubby cat running across the screen, dodging incoming obstacles (stones). How far can you go without tripping?
+"Run On" is a fun little side-scrolling endless runner game built using **Pygame**. You control a chubby cat running across the screen, dodging incoming obstacles (stones). 
+How far can you go without tripping?
 
 ---
 
@@ -32,7 +33,7 @@
 - Python 3.x
 - Pygame
 
-### Install Pygame with:
+## Install Pygame with:
 
 ```bash
 pip install pygame
