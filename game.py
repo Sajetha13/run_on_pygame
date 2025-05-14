@@ -3,6 +3,10 @@ import random
 import os
 
 pygame.init()
+
+image_folder = "images"
+font_folder = "fonts"
+
 def reset_game():
     global cat_x, cat_y, cat_vel_y, ob, score, game_over, waiting_to_start, last_score_update_time, frame_counter, game_restart_delay, game_over_time   
     cat_x, cat_y = 100, GROUND - cat_height
@@ -21,13 +25,11 @@ def reset_game():
 #game setup
 width , height = 800, 400
 WHITE = (255, 255, 255)
-BLUE = (0,0,255)
-BLACK = (0,0,0)
 GROUND = height - 165
 
 
-font = pygame.font.Font("PixeloidSans-Bold.ttf", 52)
-score_font = pygame.font.Font("PixeloidSans.ttf", 30) 
+font = pygame.font.Font(os.path.join(font_folder, "PixeloidSans-Bold.ttf"), 52)
+score_font = pygame.font.Font(os.path.join(font_folder, "PixeloidSans.ttf"), 30) 
 
 cat_width , cat_height = 65, 65
 
@@ -42,8 +44,6 @@ ob_spawn_time_min = 50
 ob_spawn_time_max = 120
 ob_spawn_time = random.randint(ob_spawn_time_min, ob_spawn_time_max)
 
-RED = (255,0,0)
-
 blink = True
 blink_timer = 0
 
@@ -52,14 +52,14 @@ pygame.display.set_caption("Run On")
 clock = pygame.time.Clock()
 FPS = 60 
 
-cat_img = pygame.image.load("cat.png").convert_alpha()
+cat_img = pygame.image.load(os.path.join(image_folder, "cat.png")).convert_alpha()
 cat_img = pygame.transform.scale(cat_img, (cat_width, cat_height))
 
 stone_imgs = [
-    pygame.transform.scale(pygame.image.load(f"stone{i}.png").convert_alpha(), (ob_width, ob_height))
+    pygame.transform.scale(pygame.image.load(os.path.join(image_folder, f"stone{i}.png")).convert_alpha(), (ob_width, ob_height))
     for i in range(6)
 ]
-bg_img = pygame.image.load("bg_full.jpg").convert()
+bg_img = pygame.image.load(os.path.join(image_folder, "bg_full.jpg")).convert()
 bg_img = pygame.transform.scale(bg_img, (width, height))
 
 cat_mask = pygame.mask.from_surface(cat_img)
