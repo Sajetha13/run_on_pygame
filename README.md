@@ -15,6 +15,7 @@ How far can you go without tripping?
 ---
 
 ## Folder Structure
+```
 Run-On/
 ├── game.py                
 ├── highscore.txt           
@@ -30,6 +31,7 @@ Run-On/
 │   ├── PixeloidSans.ttf
 │   └── PixeloidSans-Bold.ttf
 └── README.md               
+```
 
 ## Requirements
 
