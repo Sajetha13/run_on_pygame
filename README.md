@@ -15,18 +15,21 @@ How far can you go without tripping?
 ---
 
 ## Folder Structure
-├── game.py
-├── highscore.txt # This will be auto-created if not present
+Run-On/
+├── game.py                
+├── highscore.txt           
 ├── images/
-│ ├── bg_full.jpg
-│ ├── cat.png
-│ ├── stone0.png
-│ ├── stone1.png
-│ └── ... up to stone6.png
+│   ├── bg_full.jpg         
+│   ├── cat.png             
+│   ├── stone0.png          
+│   ├── stone1.png
+│   ├── stone2.png
+│   ├── ...
+│   └── stone6.png
 ├── fonts/
-│ ├── PixeloidSans.ttf
-│ └── PixeloidSans-Bold.ttf
-└── README.md
+│   ├── PixeloidSans.ttf
+│   └── PixeloidSans-Bold.ttf
+└── README.md               
 
 ## Requirements
 
@@ -41,3 +44,6 @@ pip install pygame
 ## Screenshot
 ![image](https://github.com/user-attachments/assets/e52ea2dc-c7cb-48b7-9b3f-af29ec3715e9)
 
+## Thank You
+Thanks for checking out Run On!
+I hope this was fun.
